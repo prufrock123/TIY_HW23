@@ -121,11 +121,11 @@ describe("About Arrays", function() {
         var array = [1, 2];
 
         array.unshift(3);
-        expect(array).to.equal(FILL_ME_IN);
+        expect(array.length).to.equal([3, 1, 2].length);
 
         var shiftedValue = array.shift();
-        expect(shiftedValue).to.equal(FILL_ME_IN);
-        expect(array).to.equal(FILL_ME_IN);
+        expect(shiftedValue).to.equal(3);
+        expect(array.length).to.equal([1, 2].length);
     });
 });
 
